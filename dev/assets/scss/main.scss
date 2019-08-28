@@ -1,0 +1,277 @@
+
+.navbar {
+    position: fixed!important;
+    width: 100%;
+    // background-color: #33c3e4;
+//     background: linear-gradient(135deg, rgba(51,196,228,1) 36%, rgba(51,196,228,1) 52%, rgba(51,196,228,1) 79%, rgba(27,175,191,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c4e4', endColorstr='#1bafbf', GradientType=1 );
+    z-index: 5;
+    background: linear-gradient(to right, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%);
+    .top-navbar__item {
+    padding: 0 15px;
+        & > a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+.header-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+.header-wrapper__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url('../images/shariki_chernyj_3d_141184_1920x1200.jpg') 50% 50% no-repeat;
+    // background: linear-gradient(135deg, rgba(51,196,228,1) 36%, rgba(51,196,228,1) 52%, rgba(51,196,228,1) 54%, rgba(27,175,191,1) 77%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c4e4', endColorstr='#1bafbf', GradientType=1 );
+    -webkit-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(to right, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%);
+    }
+}
+
+.header-wrapper__content {
+    z-index: 10;
+    .header-wrapper__content__heading {
+        font-family: 'Oswald', sans-serif;
+        font-size: 52px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .header-wrapper__content__description {
+        font-family: 'Roboto-Light', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+    }
+}
+
+.section-header {
+    padding: 50px 40px;
+}
+.theme_light {
+    background-color: #fff;
+}
+
+.head-block__heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.color--red {
+    color: #f55a42;
+}
+.head-block__icon {
+    width: 60px;
+    min-height: 60px;
+    background: url('../images/icons8-логотип-mastercard-80.png') 50% 50% no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.content-block {
+     span {
+        font-size: 24px;
+        color: #777;
+    }
+
+    .content-block__description {
+        font-family: 'Roboto-Light', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #777;  
+        margin: 10px 0;  
+    }
+}
+    
+.content-block__description__list__item {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #777;
+}
+.fa-chevron-right {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.theme_grey {
+    background-color: #93959570;;
+}
+.color--black {
+    color: #000;
+}
+.image-block__image {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    &:first-child {
+        background: url('../images/low_poly_mnogougolnik_pejzazh_abstraktsiya_103765_3840x2160.jpg') 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    &:nth-child(2) {
+        background: url('../images/poligon_low_poly_art_130453_2036x3000.jpg') 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    &:last-child {
+        background: url('../images/mnogougolnik_setka_bliki_131084_3000x3000.jpg') 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+.right-block__heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+}
+
+.right-block__description {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #777;
+}
+.label_input{
+    width: 100%;
+    input {
+        font-size: 18px;
+        width: 100%;
+        padding: 6px 0 4px 10px;
+        border: 1px solid #cecece;
+        border-radius: 8px;
+        background: #f6f6f6;
+    }
+}
+.up-form-block {
+    textarea {
+        overflow: auto;
+        width: 100%;
+        height: 200px;
+        margin-top: 15px;
+        padding: 8px 0 8px 10px;
+        resize: none;
+        border: 1px solid #cecece;
+        border-radius: 8px 0 0 0;
+        background: #f6f6f6;
+    }
+}
+.down-form-block {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    input[type="checkbox"] {
+        display: none;
+        & + label {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #f90;
+            text-align: center;
+            background-color: #fff;
+            &:before {
+                content: '\2713';
+                display: inline-block;
+                color: #f90;
+                font-size: 30px;
+                line-height: 24px;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+            }
+        }
+    }
+    input[type="checkbox"]:checked {
+        & + label {
+            &:before {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+}
+.checkbox__label {
+    margin-left: 10px;
+}
+.response-form__button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s linear;
+     &:hover {
+        background-color: #93959570;
+        transition: 0.2s linear;
+     }
+}
+footer {
+    padding: 20px 40px;
+    background-color: #152630;
+}
+.logo-block {
+    width: 60px;
+    height: 60px;
+    background: url('../images/icons8-google-64.png') 50% 50% no-repeat;
+}
+
+.footer--img {
+    background-size: cover;
+    width: 92px;
+    height: 100%
+}
+.footer-navbar__item {
+    padding: 0 15px;
+    & > a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+
+        }
+    }
+}
+
+.rights-block {
+    margin-top: 40px;
+    text-align: right;
+
+    .copyright {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+

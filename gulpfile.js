@@ -47,7 +47,8 @@ var path = {
         },
         fonts: {
             fa: './node_modules/font-awesome/fonts/*.*',
-            slick: './node_modules/slick-carousel/slick/fonts/*.*'
+            slick: './node_modules/slick-carousel/slick/fonts/*.*',
+            fontLocal: './dev/assets/fonts/*.*'
         }
     },
     dist: {
@@ -58,7 +59,8 @@ var path = {
         svg: './www/assets/images/svg/',
         fonts: {
             fa:  './www/assets/webfonts/',
-            slick: './www/assets/css/fonts/'
+            slick: './www/assets/css/fonts/',
+            fontLocal: './www/assets/fonts/'
         }
     }
 }
@@ -99,6 +101,11 @@ gulp.task('fonts:fa', function() {
 gulp.task('fonts:slick', function () {
     return gulp.src(path.src.fonts.slick)
         .pipe(gulp.dest(path.dist.fonts.slick));
+});
+
+gulp.task('fontLocal', function() {
+    return gulp.src(path.src.fonts.fontLocal)
+        .pipe(gulp.dest(path.dist.fonts.fontLocal));
 });
 
 gulp.task('images', function() {
@@ -184,7 +191,8 @@ gulp.task('build', gulp.series(
     'sass',
     'svg',
     'babel',
-    'images'
+    'images',
+    'fontLocal'
 ));
 
 gulp.task('watch', function()  {
@@ -205,6 +213,5 @@ gulp.task('server', function() {
         server: 'www'
     });
 });
-
 
 gulp.task('default', gulp.series('build', gulp.parallel('watch', 'server')));
