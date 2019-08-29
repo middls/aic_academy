@@ -19,7 +19,7 @@ let options = {
 let observer = new IntersectionObserver(onEntry, options);
 
 // list of paragraphs
-let elements = document.querySelectorAll('p');
+let elements = document.querySelectorAll('h3, p, span, h1, ul, li');
 
 // loop through all elements
 // pass each element to observe method

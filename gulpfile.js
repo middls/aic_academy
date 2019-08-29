@@ -73,7 +73,7 @@ gulp.task('babel:vendor', () =>
         .pipe(rigger())
         .pipe(sm.init())
         .pipe(babel({
-            presets: ['latest']
+            presets: ["@babel/preset-env"]
         }))
         .pipe(uglify())
         .pipe(concat('vendor.js'))
@@ -124,7 +124,7 @@ gulp.task('babel', function() {
         .pipe(plumber())
         .pipe(sm.init())
         .pipe(babel({
-            presets: ['latest']
+            presets: ["@babel/preset-env"]
         }))
         .pipe(uglify())
         .pipe(concat('app.js'))
