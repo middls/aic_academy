@@ -1,0 +1,169 @@
+// @keyframes bounceIn {
+//     0%,20%,53%,80%,to {
+//         -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+//         animation-timing-function: cubic-bezier(.215,.61,.355,1);
+//         -webkit-transform: translateZ(0);
+//         transform: translateZ(0)
+//     }
+
+//     40%,43% {
+//         -webkit-animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+//         animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+//         -webkit-transform: translate3d(0,-30px,0);
+//         transform: translate3d(0,-30px,0)
+//     }
+
+//     70% {
+//         -webkit-animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+//         animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+//         -webkit-transform: translate3d(0,-15px,0);
+//         transform: translate3d(0,-15px,0)
+//     }
+
+//     90% {
+//         -webkit-transform: translate3d(0,-4px,0);
+//         transform: translate3d(0,-4px,0)
+//     }
+// }
+
+.header-wrapper__content__heading{
+   transform: translate(0, 100px); 
+   opacity: 0;
+   transition: all 600ms;
+}
+.header-wrapper__content__description {
+    transform: translate(0, 100px); 
+   opacity: 0;
+   transition: all 600ms; 
+}
+.header-wrapper__content__heading.visible {
+  // animation-name: bounceIn;
+  // animation-duration: 1s;
+  // transform-origin: center bottom;
+  // animation-fill-mode: both;
+  transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.header-wrapper__content__description.visible {
+  // animation-name: bounceIn;
+  // animation-duration: 1s;
+  // transform-origin: center bottom;
+  // animation-fill-mode: both;
+  transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+.head-block__heading {
+    transform: translate(0, 100px); 
+   opacity: 0;
+   transition: all 600ms; 
+}
+
+.head-block__heading.visible {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.content-block__description {
+  transform: translate(0, 100px); 
+   opacity: 0;
+   transition: all 600ms; 
+}
+
+.content-block__description.visible {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+.content-block__description__list__item {
+  transform: translate(-100px, 0); 
+   opacity: 0;
+   transition: all 600ms; 
+}
+
+
+.content-block__description__list__item.visible:first-child {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .6s;
+}
+
+.content-block__description__list__item.visible:nth-child(2) {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .7s;
+}
+.content-block__description__list__item.visible:nth-child(3) {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+
+.content-block__description__list__item.visible:nth-child(4) {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .9s;
+}
+
+
+.lol:nth-child(1) {
+  transform: translate(-100px, 0); 
+   opacity: 0;
+   transition: all 800ms; 
+}
+.lol:nth-child(2){
+  transform: translate(0, -100px); 
+   opacity: 0;
+   transition: all 800ms; 
+}
+.lol:nth-child(3) {
+  transform: translate(100px, 0); 
+   opacity: 0;
+   transition: all 800ms; 
+}
+.lol.visible:nth-child(1) {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+.lol.visible:nth-child(2) {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .6s;
+}
+
+.lol.visible:nth-child(3) {
+   transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+
+.right-block__heading {
+  transform: translate(100px, 0); 
+   opacity: 0;
+   transition: all 800ms;
+}
+
+.right-block__description {
+transform: translate(100px, 0); 
+   opacity: 0;
+   transition: all 800ms;
+}
+
+.right-block__heading.visible {
+transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .6s;
+}
+
+.right-block__description.visible {
+transform: translate(0, 0);
+  opacity: 1;
+  transition-delay: .8s;
+}

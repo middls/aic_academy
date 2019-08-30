@@ -1,7 +1,4 @@
-// the callback function that will be fired
-// when the element apears in the viewport
-// because it fires on initialization
-// we have to check for change.isIntersecting parameter
+
 function onEntry(entry) {
   entry.forEach((change) => {
     if(change.isIntersecting) {
@@ -10,20 +7,25 @@ function onEntry(entry) {
   });
 }
 
-// list of options
-let options = {
+// список опций
+let options = {	
   threshold: [1]
 };
 
-// instantiate a new Intersection Observer
 let observer = new IntersectionObserver(onEntry, options);
 
-// list of paragraphs
-let elements = document.querySelectorAll('h3, p, span, h1, ul, li');
 
-// loop through all elements
-// pass each element to observe method
-// ES2015 for-of loop can traverse through DOM Elements
+
+let elements = document.querySelectorAll('.header-wrapper__content__heading,'+' .header-wrapper__content__description, ' +' .head-block__heading, .content-block__description, ' +' .content-block__description__list__item, ' +'.lol, .right-block__heading, .right-block__description');
+
+// let elements = document.querySelectorAll(
+// 	`.header-wrapper__content__heading, .header-wrapper__content__description,
+// 	 .head-block__heading, .content-block__description,
+// 	 .content-block__description__list__item, 
+// 	.lol, .right-block__heading, .right-block__description`);
+
+
 for (let elm of elements) {
   observer.observe(elm);
 }
+
