@@ -14,9 +14,26 @@
     .top-navbar__item {
     font-size: 18px;
     padding: 0 10px;
+    text-transform: uppercase;
         & > a {
+            position: relative;
             text-decoration: none;
             color: #fff;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -7px;
+                left: 0;
+                height: 2px;
+                background: #fff;
+                width: 0;
+                transition: width .2s ease-in;
+            }
+        }
+
+        &:hover > a::before {
+            width: 100%;
+            transition: width .2s ease-in;
         }
 
         &:last-child {
@@ -292,7 +309,7 @@ footer {
     height: 100%
 }
 .footer-navbar__item {
-    padding: 0 15px;
+    padding: 0 10px;
     font-size: 18px;
     &:last-child {
         padding-right: 0
@@ -300,9 +317,11 @@ footer {
     & > a {
         text-decoration: none;
         color: #fff;
+        text-transform: uppercase;
 
         &:hover {
-
+            text-decoration: none;
+            color: #93959570; 
         }
     }
 }
@@ -315,6 +334,30 @@ footer {
         color: #fff;
         font-size: 16px;
     }
+}
+#btnTop {   
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; 
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+  transition: .15s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+    color: #F137A6;
+  }
+
+  .fa-long-arrow-alt-up {
+
+  }
 }
 
 
