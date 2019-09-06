@@ -29,11 +29,12 @@ let elements = document.querySelectorAll(
 for (let elm of elements) {
   observer.observe(elm);
 }
+let btnTop = document.getElementById('btnTop');
 
 
 window.onload = function () {
-
- btnTop.onclick = function() {
+ 
+  btnTop.onclick = function() {
   window.scrollTo(pageXOffset, 0);
   };
 
